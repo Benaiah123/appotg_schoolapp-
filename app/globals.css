@@ -5,14 +5,93 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --color-primary: #263065;
-    --color-secondary: #4B66F5;
+   --color-pry: #4B66F5;
+   --color-custom-dark-blue: #263065;
+   --color-custom-grey: #5A5A5A;
     --color-brown1: #410002;
+    --color-custom-black: #070E30;
     --color-light: #4B66F5;
+    --color-surface-tint: #206A4E;
+    --color-primary-container: #A9F2CD;
+    --color-on-primary-container: #002214;
     --color-csblack: #070E30;
     --color-csdarkblue: #263065;
     --color-grey1: #626262;
     --font-poppins: "Poppins", sans-serif;
+  --color-primary: #20765D;
+  --color-surface-tint: #20765D;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #A9F2CD;
+  --color-on-primary-container: #002014;
+
+  --color-secondary: #616117;
+  --color-on-secondary: #FFFFFF;
+  --color-secondary-container: #E8E78F;
+  --color-on-secondary-container: #1D1D00;
+
+  --color-tertiary: #3D6373;
+  --color-on-tertiary: #FFFFFF;
+  --color-tertiary-container: #C1E9FB;
+  --color-on-tertiary-container: #001F29;
+
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #410002;
+
+  /* Background / Surface */
+  --color-background: #F5FBF5;
+  --color-on-background: #17201A;
+
+  --color-surface: #F5FBF5;
+  --color-on-surface: #17201A;
+
+  --color-surface-variant: #DBE4DD;
+  --color-on-surface-variant: #404943;
+
+  --color-outline: #707972;
+  --color-outline-variant: #BFCEC1;
+
+  --color-shadow: #000000;
+  --color-scrim: #000000;
+
+  /* Inverse */
+  --color-inverse-surface: #2C3230;
+  --color-inverse-on-surface: #EDEFEA;
+  --color-inverse-primary: #8DD5B2;
+
+  /* Fixed */
+  --color-primary-fixed: #A9F2CD;
+  --color-on-primary-fixed: #002014;
+  --color-primary-fixed-dim: #8DD5B2;
+  --color-on-primary-fixed-variant: #005237;
+
+  --color-secondary-fixed: #E8E78F;
+  --color-on-secondary-fixed: #1D1D00;
+  --color-secondary-fixed-dim: #CCCC76;
+  --color-on-secondary-fixed-variant: #494900;
+
+  --color-tertiary-fixed: #C1E9FB;
+  --color-on-tertiary-fixed: #001F29;
+  --color-tertiary-fixed-dim: #A5CCD9;
+  --color-on-tertiary-fixed-variant: #244C5B;
+
+  /* Surface levels */
+  --color-surface-dim: #D6DBD6;
+  --color-surface-bright: #F5FBF5;
+
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #EFF5EF;
+  --color-surface-container: #EAEFE9;
+  --color-surface-container-high: #E4EAE4;
+  --color-surface-container-highest: #DEE4DE;
+
+  /* Custom */
+  --color-custom-pry: #4B67F6;
+  --color-custom-black: #07104F;
+  --color-custom-dark-blue: #252F65;
+  --color-custom-dark-grey: #5A5A5A;
+
 }
 /* 🌟 Custom styles for react-calendar with Tailwind-like feel */
 

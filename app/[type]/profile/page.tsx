@@ -15,7 +15,7 @@ const Page = () => {
         <div className="flex flex-row items-center bg-[#F8F8F8] sm:bg-black/50 rounded-lg text-[14px]">
           <p
             className={`px-4 py-1.5 cursor-pointer text-black/50 ${
-              profile === "view" && "rounded-lg bg-secondary text-white"
+              profile === "view" && "rounded-lg bg-light text-white"
             }`}
             onClick={() => setProfile("view")}
           >
@@ -23,7 +23,7 @@ const Page = () => {
           </p>
           <p
             className={`px-4 py-1.5  cursor-pointer rounded-r-lg text-black/50 ${
-              profile === "edit" && "bg-secondary rounded-lg text-white"
+              profile === "edit" && "bg-custom-black rounded-lg text-white"
             }`}
             onClick={() => setProfile("edit")}
           >
@@ -67,7 +67,7 @@ const Page = () => {
             profile === "edit" ? "flex" : "hidden"
           } flex-col sm:flex-row mt-5 gap-4`}
         >
-          <p className="text-[#070E30] font-semibold">Change Password</p>
+          <p className="text-csblack font-semibold">Change Password</p>
           <section className="flex flex-col gap-6 text-black/50 w-full">
             <div>
               <p>Old Password</p>
