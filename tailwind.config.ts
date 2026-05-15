@@ -1,9 +1,13 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
-  content: [],
+  content: [
+    
+  ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 }

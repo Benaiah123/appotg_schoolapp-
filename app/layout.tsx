@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Geist } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // pick the weights you need
@@ -7,6 +7,9 @@ const poppins = Poppins({
 import "./globals.css";
 
 import ClientLayout from "./components/ClientLayout";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: "AppOTG School admin",
@@ -21,7 +24,7 @@ export default function RootLayout({
 }>) {
  
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
       <body
       className={`${poppins.className} flex flex-col`}      >
        
