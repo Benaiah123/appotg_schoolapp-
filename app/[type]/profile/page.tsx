@@ -5,6 +5,7 @@ import Image from "next/image";
 import ImageUploadPreview from "@/app/components/Upload";
 
 import { useState } from "react";
+import ViewEdit from "@/app/components/widgets/view-edit";
 
 const Page = () => {
   const [profile, setProfile] = useState("view");
@@ -12,24 +13,7 @@ const Page = () => {
     <section className={`bg-white rounded-t-lg sm:p-4 min-h-screen`}>
       <div className="flex flex-row justify-between bg-[#EEEBEB] p-4 sm:p-0 sm:bg-white">
         <h1>{profile === "view" ? "View Mode" : "Edit Mode"}</h1>
-        <div className="flex flex-row items-center bg-[#F8F8F8] sm:bg-black/50 rounded-lg text-[14px]">
-          <p
-            className={`px-4 py-1.5 cursor-pointer text-black/50 ${
-              profile === "view" && "rounded-lg bg-light text-white"
-            }`}
-            onClick={() => setProfile("view")}
-          >
-            View
-          </p>
-          <p
-            className={`px-4 py-1.5  cursor-pointer rounded-r-lg text-black/50 ${
-              profile === "edit" && "bg-custom-black rounded-lg text-white"
-            }`}
-            onClick={() => setProfile("edit")}
-          >
-            Edit
-          </p>
-        </div>
+       <ViewEdit profile={profile} setProfile={setProfile}/>
       </div>
       <div className="p-2 sm:p-0">
         {profile === "view" && (
@@ -69,10 +53,7 @@ const Page = () => {
         >
           <p className="text-csblack font-semibold">Change Password</p>
           <section className="flex flex-col gap-6 text-black/50 w-full">
-            <div>
-              <p>Old Password</p>
-              <input className="text-black border border-black/50 py-2 w-full rounded-lg pl-3" />
-            </div>
+            
             <div>
               <p>New Password</p>
               <input className="text-black border border-black/50 py-2 w-full rounded-lg pl-3" />
